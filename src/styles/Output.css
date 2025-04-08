@@ -1,0 +1,298 @@
+.output-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F5FF;
+    min-height: 100vh;
+    padding-top: 80px; /* Space for fixed header */
+  }
+  
+  .output-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .output-heading {
+    text-align: center;
+    color: #4a2b7a;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(74, 43, 122, 0.1);
+  }
+  
+  .savings-banner {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(74, 43, 122, 0.1);
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #e0d0ff;
+  }
+  
+  .savings-item {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .savings-item.highlight {
+    background-color: #f0e5ff;
+    border-radius: 10px;
+  }
+  
+  .savings-label {
+    display: block;
+    font-weight: 600;
+    color: #6c4a9e;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .savings-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a2b7a;
+  }
+  
+  .itinerary-container {
+    margin-bottom: 30px;
+  }
+  
+  .itinerary-stop {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(74, 43, 122, 0.1);
+    border: 1px solid #e0d0ff;
+  }
+  
+  .stop-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0e5ff;
+    padding-bottom: 15px;
+  }
+  
+  .stop-number {
+    background-color: #4a2b7a;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .stop-info {
+    flex: 1;
+  }
+  
+  .store-name {
+    color: #4a2b7a;
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .store-address {
+    color: #6c4a9e;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .travel-time {
+    color: #4df2fa;
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .stop-total {
+    text-align: right;
+    min-width: 120px;
+  }
+  
+  .total-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #6c4a9e;
+  }
+  
+  .total-amount {
+    font-weight: bold;
+    color: #4a2b7a;
+    font-size: 1.1rem;
+  }
+  
+  .item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .item {
+    padding: 12px 0;
+    border-bottom: 1px solid #f8f5ff;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .item:hover {
+    background-color: #f8f5ff;
+  }
+  
+  .item-bullet {
+    color: #4df2fa;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .item-price {
+    margin-left: auto;
+    color: #4a2b7a;
+    font-weight: 500;
+  }
+  
+  /* === NEW SECTION to align buttons next to the arrow === */
+  .footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  
+  .arrow-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #4a2b7a;
+    color: #4a2b7a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .arrow-button:hover {
+    background-color: #f0e5ff;
+  }
+  
+  /* Button styles (same size, consistent) */
+  .save-button, .edit-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 10px rgba(74, 43, 122, 0.2);
+    width: 200px;
+  }
+  
+  .save-button {
+    background-color: #4a2b7a;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #6c4a9e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 43, 122, 0.3);
+  }
+  
+  .edit-button {
+    background-color: white;
+    color: #4a2b7a;
+    border: 2px solid #4a2b7a;
+  }
+  
+  .edit-button:hover {
+    background-color: #f0e5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 43, 122, 0.3);
+  }
+  
+  /* === Responsive Styling === */
+  @media (max-width: 768px) {
+    .output-content {
+      padding: 20px 15px;
+    }
+  
+    .output-heading {
+      font-size: 1.6rem;
+    }
+  
+    .savings-banner {
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    .savings-item {
+      padding: 10px;
+    }
+  
+    .stop-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .stop-number {
+      margin-bottom: 10px;
+    }
+  
+    .stop-total {
+      text-align: left;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .footer-bar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-left: 0;
+    }
+  
+    .save-button, .edit-button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .output-heading {
+      font-size: 1.4rem;
+    }
+  
+    .itinerary-stop {
+      padding: 15px;
+    }
+  
+    .savings-value {
+      font-size: 1.3rem;
+    }
+  
+    .store-name {
+      font-size: 1.1rem;
+    }
+  }
+  
